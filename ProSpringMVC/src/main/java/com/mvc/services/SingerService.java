@@ -9,9 +9,9 @@ import org.springframework.data.domain.Pageable;
 import com.mvc.entities.Singer;
 
 public interface SingerService {
-	ArrayList<String>	findAll();
+	ArrayList<Singer>	findAll();
 	Singer	findOneSinger(Long	id);
-	Singer	save(String	singer);
+	Singer	save(Singer	singer);
 	Page<Singer> findAllByPage(Pageable pageable);
 
 }
