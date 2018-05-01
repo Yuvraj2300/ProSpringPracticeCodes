@@ -7,4 +7,8 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="string1" name="YOLO" class="java.lang.String" />
 	<bean id="string2" class="java.lang.String" />
 	<bean class="java.lang.String" />
+
+	<bean id="Drake" class="com.learn.springChap3.xml.Singer"
+		depends-on="gopher" />
+	<bean id="gopher" class="com.learn.springChap3.xml.Guitar" />
 </beans>
